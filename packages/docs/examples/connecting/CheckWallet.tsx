@@ -14,7 +14,7 @@ export function CheckWallet() {
     async function handleConnector() {
       /* checkWallet:start */
       const hasConnector = await fuel.hasConnector();
-      console.log('hasConnector', hasConnector);
+console.log("hasConnector", hasConnector);
       /* checkWallet:end */
       setMessage(
         hasConnector ? 'Wallet found!' : 'Wallet not detected on the browser'
